@@ -1,0 +1,56 @@
+name: hungry_app
+description: "Hungry App"
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.2.1
+  flutter_screenutil: ^5.9.3
+
+  bloc: ^9.0.1
+  get_it: ^8.2.0
+
+  dio: ^5.9.0
+  retrofit: ^4.7.3
+
+  json_annotation: ^4.9.0
+  freezed_annotation: ^3.1.0
+  shared_preferences: ^2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: ^2.9.0
+  json_serializable: ^6.11.1
+  retrofit_generator: ^10.0.6
+  freezed: ^3.2.3
+
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^5.0.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/3.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/svgs/
+
+  fonts:
+    - family: LuckiestGuy
+      fonts:
+        - asset: assets/fonts/LuckiestGuy-Regular.ttf
