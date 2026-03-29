@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hungry_app/core/themes/app_colors.dart';
-import 'package:hungry_app/features/auth/presentation/screens/login_screen.dart';
+import 'package:hungry_app/features/login/presentation/screens/login_screen.dart';
 import 'package:hungry_app/features/root/root_screen.dart';
 import 'package:hungry_app/features/auth/presentation/widgets/custom_button_auth.dart';
 import 'package:hungry_app/features/auth/presentation/widgets/custom_small_button_for_auth.dart';
