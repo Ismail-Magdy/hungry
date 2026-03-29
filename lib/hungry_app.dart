@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import 'features/splashs/splash_screen.dart';
+import 'package:hungry_app/core/routing/app_router.dart';
+import 'package:hungry_app/core/routing/routes.dart';
 
 class HungryApp extends StatelessWidget {
-  const HungryApp({super.key});
+  const HungryApp({super.key, required this.appRouter});
+  final AppRouter appRouter;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,8 @@ class HungryApp extends StatelessWidget {
               useMaterial3: true,
             ),
             debugShowCheckedModeBanner: false,
-            home: SplashScreen(),
+            initialRoute: Routes.loginScreen,
+            onGenerateRoute: appRouter.generateRoutes,
           ),
         );
       },
