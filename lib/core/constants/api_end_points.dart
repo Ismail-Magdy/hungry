@@ -11,7 +11,7 @@ class ApiEndPoints {
   /// GET
   static const String getAllCategories = "categories";
   static const String getAllProducts = "products";
-  static const String getProductById = "products/2";
+  static String getProductById(int id) => "products/$id";
   static const String getUserFavorites = "favorites";
 
   /// POST

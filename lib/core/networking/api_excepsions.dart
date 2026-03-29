@@ -1,25 +1,28 @@
 import 'package:dio/dio.dart';
 import 'package:hungry_app/core/networking/api_error.dart';
 
-class ApiExcepsions {
+class ApiExceptions {
   static ApiError handleError(DioException error) {
     switch (error.type) {
       case DioExceptionType.connectionTimeout:
-        return ApiError(message: "Bad Connection");
+        return ApiError(message: "Connection Timeout");
       case DioExceptionType.badCertificate:
         return ApiError(message: "Bad Certificate");
       case DioExceptionType.badResponse:
-        return ApiError(message: "Bad Response");
+        return ApiError(
+          statusCode: error.response?.statusCode,
+          message: error.response?.data['message'] ?? "Bad Response",
+        );
       case DioExceptionType.cancel:
-        return ApiError(message: "Cancel");
+        return ApiError(message: "Request Canceled");
       case DioExceptionType.connectionError:
-        return ApiError(message: "Bad Connection Error");
+        return ApiError(message: "No Internet Connection");
       case DioExceptionType.receiveTimeout:
         return ApiError(message: "Receive Timeout");
       case DioExceptionType.sendTimeout:
-        return ApiError(message: "send Timeout");
+        return ApiError(message: "Send Timeout");
       case DioExceptionType.unknown:
-        return ApiError(message: "Unknown Error , Please Try Again");
+        return ApiError(message: "Unknown Error, Please Try Again");
     }
   }
 }

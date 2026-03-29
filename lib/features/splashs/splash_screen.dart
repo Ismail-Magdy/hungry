@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hungry_app/core/themes/app_colors.dart';
-import 'package:hungry_app/features/auth/presentation/screens/login_screen.dart';
+import 'package:hungry_app/features/login/presentation/screens/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
