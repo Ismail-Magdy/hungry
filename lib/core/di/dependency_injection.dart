@@ -3,6 +3,8 @@ import 'package:hungry_app/features/login/data/repos/login_repo.dart';
 import 'package:hungry_app/features/login/manager/login_cubit.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../features/sign_up/data/repos/sign_up_repo.dart';
+import '../../features/sign_up/manager/sign_up_cubit.dart';
 import '../networking/api_services.dart';
 import '../networking/dio_client.dart';
 
@@ -22,4 +24,8 @@ Future<void> initGetIt() async {
   /// Login
   getIt.registerLazySingleton<LoginRepo>(() => LoginRepo(getIt()));
   getIt.registerFactory<LoginCubit>(() => LoginCubit(getIt()));
+
+  /// SignUp
+  getIt.registerLazySingleton<SignUpRepo>(() => SignUpRepo(getIt()));
+  getIt.registerFactory<SignUpCubit>(() => SignUpCubit(getIt()));
 }

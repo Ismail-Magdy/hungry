@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hungry_app/core/themes/app_colors.dart';
-import 'package:hungry_app/features/auth/presentation/screens/sign_up_screen.dart';
 import 'package:hungry_app/features/root/root_screen.dart';
-import 'package:hungry_app/features/auth/presentation/widgets/custom_button_auth.dart';
-import 'package:hungry_app/features/auth/presentation/widgets/custom_small_button_for_auth.dart';
-import 'package:hungry_app/features/auth/presentation/widgets/custom_text_field.dart';
+import 'package:hungry_app/features/auth/widgets/custom_button_auth.dart';
+import 'package:hungry_app/features/auth/widgets/custom_small_button_for_auth.dart';
+import 'package:hungry_app/features/auth/widgets/custom_text_field.dart';
+import '../../../../core/routing/routes.dart';
 import '../../manager/login_cubit.dart';
 import '../../manager/login_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -132,12 +132,9 @@ class _LoginScreenState extends State<LoginScreen> {
                               CustomSmallButtonForAuth(
                                 text: "SignUp",
                                 onPressed: () {
-                                  Navigator.push(
+                                  Navigator.pushNamed(
                                     context,
-                                    MaterialPageRoute(
-                                      builder: (context) =>
-                                          const SignUpScreen(),
-                                    ),
+                                    Routes.signUpScreen,
                                   );
                                 },
                               ),
