@@ -22,6 +22,8 @@
 This project heavily emphasizes a premium visual aesthetic. Utilizing custom typography (`LuckiestGuy`), scalable vector graphics (`flutter_svg`), and dynamic screen sizing (`flutter_screenutil`), the app maintains a flawless look across all device sizes.
 
 
+https://github.com/user-attachments/assets/ac6b6413-302f-4b8a-bd12-9c535fcd9d9b
+
 
 ---
 
