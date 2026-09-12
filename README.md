@@ -4,6 +4,10 @@
 
 **A Pixel-Perfect, High-Performance Food Delivery Application built with Flutter.**
 
+<img width="1067" height="330" alt="image" src="https://github.com/user-attachments/assets/2d2acc82-9764-49e0-a308-ad369b7261fb" />
+
+
+---
 [![Flutter Version](https://img.shields.io/badge/Flutter-%5E3.9.0-blue.svg?logo=flutter)](https://flutter.dev)
 [![Dart Version](https://img.shields.io/badge/Dart-3.x-blue.svg?logo=dart)](https://dart.dev)
 [![State Management](https://img.shields.io/badge/State_Management-Bloc-purple.svg)](https://bloclibrary.dev/)
